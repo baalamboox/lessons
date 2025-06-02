@@ -1,3 +1,5 @@
+import "dart:math";
+
 void main() {
   // Las variables con var obtienen su valor por inferencia.
   var name = "Guillermo";
@@ -48,5 +50,9 @@ void main() {
   print(fibonacci(10));
 
   flyByObject.where((name) => name.contains('turn')).forEach(print);
+
+  Random getRandom() => Random();
+
+  print(getRandom().runtimeType);
 
 }
